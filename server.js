@@ -53,7 +53,7 @@ app.use(require('pino-http')({logger: pino}));
 app.get('/', (req, res) => {
   // Use req.log (a `pino` instance) to log JSON:
   req.log.info({message: 'Hello Batman! Welcome to our Node.js Starter Application!'});
-  res.send('Hello Superman! Welcome to our Node.js Application!');
+  res.send('Hello Batman! Welcome to our Node.js Application!');
 });
 
 app.get('*', (req, res) => {
